@@ -2,16 +2,24 @@
  
   ## Description
   
-  this is an application that dynamically generates a README from a user's input.
+  This project is an application that dynamically generates a README from a user's input.
 
-  
+  ## User Story
+
+  ```
+  AS a developer
+
+  I WANT a README generator
+
+  SO THAT I can easily put together a good REAMDE for a new project
+
+  ```
+
   ## Table Of Contents
   
   * [Installation](#installation)
   
-  * [User Story](#user-story)
-  
-  * [Contributing](#contributing)
+  * [Usage](#usage)
   
   * [Demo of Application](#demo-of-application)
   
@@ -24,22 +32,29 @@
   ```
   npm i
   ```
-  
-  ## User Story
+  Once dependencies are installed, the application is ready to run. 
+
+  ## Usage
+
+  To run the application from the command line please run the following command:
 
   ```
-  AS a developer
+  node index.js
+  ``` 
+  
+  Following the command, the user will be instructed to answer questions regarding their project. Following the last question, the data input is written in the generate README file and the user is notifed.
 
-  I WANT a README generator
 
-  SO THAT I can easily put together a good REAMDE for a new project
+  ![Command line success preview](Assets/success-preview.png)
+  
+
+  The user can now view the generated README file by running the following command:
 
   ```
-  
-  
-  ## Contributing
-  
-  not taking help at this time
+  code .
+  ``` 
+
+
   
   ## Demo of Application
   ![Command line questions Preview](Assets/questions-preview.gif)
@@ -53,4 +68,4 @@
 
   ## Questions
   
-  If you have any questions about this project, please contact ashleydeyoung at ashley.d.deyoung@gmail.com
+  If you have any questions about this project, please contact ashleydeyoung at ashley.d.deyoung@gmail.com.

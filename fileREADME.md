@@ -1,14 +1,14 @@
 
-  # Test application
-  [![GitHub License](https://img.shields.io/badge/license-PGL%203.0-blueviolet.svg)](https://github.com/ashleytest/Testapplication)
+  # the test
+  [![GitHub License](https://img.shields.io/badge/license-APACHE%202.0-blueviolet.svg)](https://github.com/ashley/thetest)
   
   ## Description
   
-  this is a short description of the project
+  short description
 
   ## Deployment
 
-  [Test application](https://www.test.com)
+  [the test]("https://www.test.com)
   
   ## Table Of Contents
   
@@ -34,25 +34,25 @@
   
   ## Usage
 
-  at this time, there is nothing the user needs to know
+  nothing at this moment
   
   ## License
   
-  This project is licensed under the PGL 3.0 License.
+  This project is licensed under the APACHE 2.0 License.
   
   ## Contributing
   
-  not accepting contributions at this time
+  nothing at this time
   
   ## Tests
   
   To run tests, run the following command:
   
   ```
-  npm test
+  npm tests
   ```
   
   ## Questions
   
-  If you have any questions about this project, please contact ashleytest at ashley@test.com.
+  If you have any questions about this project, please contact ashley at ashley@gmail.com.
   
