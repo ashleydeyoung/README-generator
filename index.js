@@ -19,7 +19,7 @@ const questions = [{
   },
   {
     type: "input",
-    message: "What is your poject name?",
+    message: "What is your project name?",
     name: "title"
   },
   {
@@ -35,8 +35,7 @@ const questions = [{
         "MIT",
         "APACHE 2.0",
         "PGL 3.0",
-        "BSD 3",
-        "None"
+        "BSD 3"
     ]
   },
   {
@@ -53,10 +52,15 @@ const questions = [{
     type: "input",
     message: "What does the user need to know about your repo?",
     name: "usage"
+  },
+  {
+    type: "input",
+    message: "What does the user need to know about contributing to your repo?",
+    name: "contributors"
   }
 ]
 
-let fileName = "fileName.md"
+let fileName = "fileREADME.md"
 
 function writeToFile(data) {
     
@@ -66,7 +70,7 @@ function writeToFile(data) {
           return console.log(err);
         }
       
-        console.log("Success!");
+        console.log("Success! fileREADME.md created!");
       
       });
 }
@@ -74,6 +78,7 @@ function writeToFile(data) {
 function init() {
     inquirer.prompt(questions).then(function(data) {
         data.badge = encodeURI(data.license)
+        data.github = data.title.split(' ').join('')
         data = generate(data)
         writeToFile(data);
 

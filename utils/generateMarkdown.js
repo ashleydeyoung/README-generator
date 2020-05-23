@@ -1,34 +1,40 @@
 function generateMarkdown(data) {
   return `
-  ## ${data.title}
-  [![GitHub License](https://img.shields.io/badge/license-${data.badge}-blueviolet.svg)](${data.url})
+  # ${data.title}
+  [![GitHub License](https://img.shields.io/badge/license-${data.badge}-blueviolet.svg)](https://github.com/${data.author}/${data.github})
   
   ## Description
   
   ${data.description}
+
+  ## Deployment
+
+  [${data.title}](${data.url})
   
   ## Table Of Contents
   
-  *[Installation](#installation)
+  * [Installation](#installation)
   
-  *[Usage](#usage)
+  * [Usage](#usage)
   
-  *[License](#license)
+  * [License](#license)
   
-  *[Contributing](#contributing)
+  * [Contributing](#contributing)
   
-  *[Tests](#tests)
+  * [Tests](#tests)
   
-  *[Questions](#questions)
+  * [Questions](#questions)
   
   ## Installation
   
-  To install necessary dependencies, run the following commad:
+  To install necessary dependencies, run the following command:
   
+  \`\`\`
   ${data.install}
+  \`\`\`
   
   ## Usage
-  
+
   ${data.usage}
   
   ## License
@@ -37,13 +43,15 @@ function generateMarkdown(data) {
   
   ## Contributing
   
-  ${data.author}
+  ${data.contributors}
   
   ## Tests
   
   To run tests, run the following command:
   
+  \`\`\`
   ${data.tests}
+  \`\`\`
   
   ## Questions
   
