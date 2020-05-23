@@ -20,7 +20,7 @@ const questions = [{
   {
     type: "input",
     message: "What is your poject name?",
-    name: "name"
+    name: "title"
   },
   {
     type: "input",
@@ -52,14 +52,14 @@ const questions = [{
   {
     type: "input",
     message: "What does the user need to know about your repo?",
-    name: "usuage"
+    name: "usage"
   }
 ]
 
 let fileName = "fileName.md"
 
 function writeToFile(data) {
-
+    
     fs.writeFile(fileName, data, function(err) {
 
         if (err) {
@@ -73,6 +73,7 @@ function writeToFile(data) {
 
 function init() {
     inquirer.prompt(questions).then(function(data) {
+        data.badge = encodeURI(data.license)
         data = generate(data)
         writeToFile(data);
 
