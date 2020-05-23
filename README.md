@@ -2,7 +2,7 @@
  
   ## Description
   
-  this is an application that dynamically generates a README.md from a user's input.
+  this is an application that dynamically generates a README from a user's input.
 
   
   ## Table Of Contents
